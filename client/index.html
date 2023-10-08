@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora Cinemática</title>
+  </head>
+  <body>
+    <h1>Calculadora Cinemática</h1>
+    <form id="form">
+      <label for="r1">r1:</label>
+      <input type="number" id="r1" name="r1" value="1" />
+      <br />
+      <label for="r2">r2:</label>
+      <input type="number" id="r2" name="r2" value="1" />
+      <br />
+      <label for="r3">r3:</label>
+      <input type="number" id="r3" name="r3" value="1" />
+      <br />
+      <label for="r4">r4:</label>
+      <input type="number" id="r4" name="r4" value="1" />
+      <br />
+      <label for="theta2">theta2:</label>
+      <input type="number" id="theta2" name="theta2" value="0" />
+      <br />
+      <label for="theta3">theta3:</label>
+      <input type="number" id="theta3" name="theta3" value="0" />
+      <br />
+      <label for="theta4">theta4:</label>
+      <input type="number" id="theta4" name="theta4" value="0" />
+
+      <br />
+      <input type="submit" value="Calcular" />
+    </form>
+  </body>
+  <script>
+    function calcular() {
+      // Tu código de cálculo aquí
+      // Por ejemplo:
+      console.log("Valores de theta3 y theta4 calculados:");
+      console.log("theta3 = " + ((theta3 * 180) / Math.PI).toFixed(3));
+      console.log("theta4 = " + ((theta4 * 180) / Math.PI).toFixed(5));
+      console.log("Número de iteraciones: " + iteracion);
+    }
+  </script>
+  <script src="index.js" type="module"></script>
+</html>
